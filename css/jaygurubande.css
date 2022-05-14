@@ -1,0 +1,1566 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+/*@font-face {
+    font-family: Josefin Sans;
+    src: url(../fonts/josefin-sans/JosefinSans-Regular.ttf);
+}*/
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #FF8A00;
+  outline: 1px solid #000;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/*-----------------------------Home Slider Start------------------*/
+
+.bg-dark
+{
+    background-color: transparent;
+}
+
+.slider
+{
+	position:relative;
+	z-index:1;
+}
+
+.bg
+{
+	position:absolute;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:2;
+}
+
+.mynav
+{
+	position:fixed;
+	z-index:2;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.navbar
+{
+    padding:15px;
+}
+
+
+.navbar-nav .nav-item a
+{
+	color:#fff;
+	font-size:15px;
+	font-weight:500;
+	text-transform:uppercase;
+    letter-spacing: 0px;
+    font-family: Josefin Sans;
+    animation: 1s ease-out 0s 1 NavbatFromTop;
+
+}
+
+    
+@keyframes NavbatFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.navbar-nav .dropdown .dropdown-menu, .navbar-nav .dropdown .dropdown-menu a
+{
+    margin:0px;
+    padding:0px;
+    color:#000;
+}
+
+.navbar-nav .dropdown .dropdown-menu a
+{
+    padding:5px 10px;
+	font-size:13px;
+    border-bottom:1px solid #f2f2f2;
+}
+
+.top_nav
+{
+    width:100%;
+	position:absolute;
+	top:10px;
+    height:40px;
+    line-height:40px;
+    color:#fff;
+    font-size:14px;
+	z-index:2;
+}
+
+.mybt
+{
+    margin-left:20px;
+    font-size:16px;
+    padding: 10px 15px 10px 15px;
+    text-align:center;
+    display:block;
+    background: transparent linear-gradient(180deg, #FF8A00 0%, #D37008 100%) 0% 0% no-repeat padding-box;
+    color:#000;
+	border-radius:5px;
+    transition:all ease-in-out 0.1s;
+}
+
+.navbar-nav .nav-item .mybt
+{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mybt a
+{
+    color:#000;
+    transition:all ease-in-out 0.1s;
+}
+
+.mybt:hover, .mybt a:hover
+{
+/*    background:#f6413e; 
+    color:#fff;*/
+    text-decoration:none;
+}
+
+.donate
+{
+    height:40px;
+    line-height:40px;
+}
+
+.donate ul
+{
+    margin:0px;
+    padding:0px;
+}
+
+.donate ul li
+{
+    display:inline-block;
+    padding:0px 5px;
+    line-height:25px;
+    height:25px;
+}
+
+
+.donate ul li a
+{
+    color:#f6413e;
+}
+
+.donate ul li i
+{
+    font-size:16px;
+}
+
+
+.home-slider-white-down-arrow-div
+{
+    position:absolute;
+    bottom: 20%;
+    left:50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+
+.down-arrow-bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+
+.carousel-indicators li {
+    border-radius:50%;
+    width: 10px;
+    height: 10px;
+    background-color: #FF8A00;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 30%;
+  left: 3.8%;
+  transform: translateY(-30%);
+  z-index: 20;
+  color: #FFFFFF;
+}
+
+.carousel-content-2nd
+{
+  position: absolute;
+  top: 40%;
+  right:10%;
+  transform: translateY(-40%);
+  z-index: 20;
+  color: #FFFFFF;
+}
+
+
+.home-slider-header-text
+{
+    font-family: Josefin Sans;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    animation: 2s ease-out 0s 1 slideTextFromLeft;
+}
+
+.home-slider-sub-header-text
+{
+    font-family: Josefin Sans;
+    font-size: 72px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 82px;
+    animation: 2s ease-out 0s 1 slideTextFromLeft;
+}
+
+.home-slider-title-text
+{
+    font-family: Josefin Sans;
+    font-size: 26px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    animation: 2s ease-out 0s 1 slideTextFromLeft;
+}
+
+
+@keyframes slideTextFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:991px)
+{
+   .navbar
+    {
+        padding:10px;
+    }
+
+    .navbar-collapse
+    {
+        border-radius:5px;
+        background-color:rgba(0,0,0,0.8);
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+         box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .navbar-nav .nav-item 
+    {
+        padding: 0px 10px;
+        border-bottom: 1px solid #565963;
+    }
+
+   .mybt 
+   {
+       margin-left: 0px;
+   }
+
+   .mynav .navbar-toggler .navbar-toggler-icon 
+   {
+    color: #fff;
+    outline: 0px;
+    font-size: 20px;
+   }
+
+    .carousel-indicators 
+    {
+        bottom: 1%;
+    }
+
+    .home-slider-white-down-arrow-div
+    {
+        bottom: 6%;
+    }
+
+    .carousel-content 
+    {
+        top: 50.5%;
+        transform: translateY(-50.5%);
+    }
+
+    .home-slider-header-text
+    {
+        font-size: 25px;
+        margin-bottom: 0.5rem;
+    }
+
+    .home-slider-sub-header-text
+    {
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 0.5rem;
+    }
+
+    .home-slider-title-text
+    {
+        font-size: 22px;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1365px)
+{
+    .navbar-expand-lg .navbar-nav .nav-link 
+    {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+   .home-slider-white-down-arrow-div
+    {
+        bottom: 7%;
+    }
+
+    .carousel-indicators 
+    {
+        bottom: 17%;
+    }
+
+    .carousel-content 
+    {
+        top: 51%;
+        transform: translateY(-51%);
+    }
+
+}
+
+@media only screen and (min-width: 1366px)
+{
+    .navbar-expand-lg .navbar-nav .nav-link 
+    {
+        padding-right: 1.3rem;
+        padding-left: 1.3rem;
+    }
+
+   .home-slider-white-down-arrow-div
+    {
+        bottom: 22%;
+    }
+
+    .carousel-indicators 
+    {
+        bottom: 30%;
+    }
+
+}
+
+
+/*-----------------------------Home Slider End------------------*/
+
+
+
+/*-----------------------------About Us Start------------------*/
+
+.about-us-title
+{
+    font-size: 32px;
+    margin-bottom: 0rem;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 100px 0px 15px 0px;
+}
+
+.about-us-underline
+{
+    background: transparent linear-gradient(180deg, #930E7C 0%, #680757 100%) 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    width: 80px;
+    height: 8px;
+}
+
+.we-a-technological
+{
+    font-size: 36px;
+    margin-bottom: 0rem;
+    line-height: 48px;
+    font-family: Josefin Sans;
+    letter-spacing: 0px;
+    color: #862B78;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 25px 0px 0px 0px;
+}
+
+.we-help-make
+{
+    font-size: 22px;
+    margin-bottom: 0rem;
+    line-height: 30px;
+    font-family: Josefin Sans;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    padding: 45px 0px 0px 0px;
+}
+
+
+.about-us-dashed-border
+{
+    border: 2px dashed #707070;
+    opacity: 0.5;
+}
+
+.about-us-circle-img
+{
+    margin-top: -60px;
+}
+
+.about-us-mobile-app
+{
+    font-family:Josefin Sans;
+    font-size: 23px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    padding: 0px 0px 0px 18.88px; 
+    margin: 2px 0rem 0rem 0rem;
+}
+
+.about-us-originals
+{
+    font-family:Josefin Sans;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    padding: 0px 0px 0px 14.99px; 
+    margin: 0px 0rem 0rem 0rem;
+}
+
+.about-us-music
+{
+    font-family:Josefin Sans;
+    font-size: 23px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    padding: 0px 0px 0px 16.62px; 
+    margin: 0px 0rem 0rem 0rem;
+}
+
+.about-us-video
+{
+    font-family:Josefin Sans;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    padding: 0px 0px 0px 15.13px; 
+    margin: 0px 0rem 0rem 0rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px)
+{
+  .we-help-make
+  {
+      text-align: justify;
+      font-size: 20px;
+  }
+
+   .about-us-circle-img
+  {
+      margin-top: 0px;
+  }
+
+    .about-us-circle-img-div
+  {
+     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1365px)
+{
+      .we-help-make
+      {
+          text-align: justify;
+          font-size: 18px;
+      }
+
+}
+/*-----------------------------About Us End------------------*/
+
+
+
+
+/*-----------------------------Key Features Start------------------*/
+
+.features-section
+{
+    background: url('../images/features/features-bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}
+
+.features-title
+{
+    font-size: 32px;
+    margin-bottom: 0rem;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 130px 0px 15px 0px;
+}
+
+.features-underline
+{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    width: 80px;
+    height: 8px;
+}
+
+
+.features-header
+{
+
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 0rem;
+}
+
+.features-sub-header
+{
+    font-family: Josefin Sans;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: -13px 0rem 0rem 0rem;
+}
+
+.key-features-row-border
+{
+    border-bottom: 2px dashed #FFFFFF; 
+}
+
+
+.key-features-col-border
+{
+    border-right: 2px dashed #FFFFFF; 
+}
+
+.original-india-short
+{
+    font-family: Josefin Sans;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:991px)
+{
+    .features-section
+  {
+    margin:30px 0px 0px 0px;
+  }
+
+   .features-header 
+    {
+        font-size: 23px;
+    }
+
+    .features-sub-header 
+    {
+        font-size: 14px;
+        margin: -10px 0rem 0rem 0rem;
+   }
+
+       .features-title
+    {
+        padding: 80px 0px 15px 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1365px)
+{
+    .features-header 
+    {
+        font-size: 34px;
+    }
+      .features-title
+    {
+        padding: 100px 0px 15px 0px;
+    }
+}
+
+
+/*-----------------------------Key Features End------------------*/
+
+
+/*-----------------------------Advanced Features Start------------------*/
+
+
+.advanced-features-section
+{
+    background: url('../images/features/advanced-features-bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}
+
+
+.advanced-features-title
+{
+    font-size: 32px;
+    margin-bottom: 0rem;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 140px 0px 15px 0px;
+}
+
+.advanced-features-underline
+{
+    background: transparent linear-gradient(180deg, #930E7C 0%, #680757 100%) 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    width: 80px;
+    height: 8px;
+}
+
+.be-discover-or
+{
+    font-size: 22px;
+    font-family: Josefin Sans;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+
+.be-discover-or-div
+{
+    border-top: 2px dashed #dbdbdb;
+    border-bottom: 2px dashed #dbdbdb;
+}
+
+
+.wrapper 
+{
+  font-family: Josefin Sans;
+  font-size: 28px;
+  color: #862B78;
+  margin:60px 0px 40px 0px;
+}
+
+.StepProgress {
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
+}
+
+.StepProgress::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 10px;
+  height: 86%;
+  border-left: 2px dashed #7C3475;
+}
+
+.StepProgress-item {
+  position: relative;
+  counter-increment: list;
+}
+.StepProgress-item:not(:last-child) {
+  padding-bottom: 15px;
+}
+.StepProgress-item::before {
+  /*display: inline-block;
+  content: '';
+  position: absolute;
+  left: -30px;
+  height: 100%;
+  width: 10px;*/
+}
+.StepProgress-item::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -37px;
+  width: 29px;
+  height: 27px;
+  border: 2px solid #CCC;
+  border-radius: 50%;
+  background-color: #FFF;
+}
+.StepProgress-item.is-done::before {
+  /*border-left: 2px dashed #7C3475;*/
+}
+.StepProgress-item.is-done::after {
+  /*content: "✔";*/
+  font-size: 10px;
+  color: #FFF;
+  text-align: center;
+  border: 2px solid #7C3475;
+  /*background-color: green;*/
+}
+.StepProgress-item.current::before {
+  border-left: 2px dashed #7C3475;
+}
+.StepProgress-item.current::after {
+  /*content: counter(list);*/
+  padding-top: 1px;
+  width: 29px;
+  height: 27px;
+  top: -4px;
+  left: -40px;
+  font-size: 14px;
+  text-align: center;
+  /*color: green;*/
+  border: 2px solid #7C3475;
+  background-color: white;
+}
+.StepProgress strong {
+  display: block;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:991px)
+{
+    .be-discover-or
+  {
+      text-align: justify;
+      font-size: 21px;
+  }
+
+  .be-discover-or-div
+  {
+    margin-bottom: 20px;
+  }
+
+
+    .advanced-features-title
+    {
+        padding: 80px 0px 15px 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1365px)
+{
+    .be-discover-or
+  {
+      text-align: justify;
+  }
+
+      .advanced-features-title
+    {
+        padding: 80px 0px 15px 0px;
+    }
+}
+
+
+
+/*-----------------------------Advanced Features End------------------*/
+
+
+/*-----------------------------Download App Start------------------*/
+
+.download-app-section
+{
+    background: url('../images/download-app/download-app-bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}
+
+
+.download-app-section1
+{
+    background: url('../images/download-app/download_bg.jpg') no-repeat center center ; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+     background-size: cover; 
+     -o-background-size: cover;
+    height:550px;     
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.download-app-title
+{
+    font-size: 32px;
+    margin-bottom: 0rem;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 100px 0px 15px 0px;
+}
+
+.download-app-underline
+{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    width: 80px;
+    height: 8px;
+}
+
+.download-app-ph
+{
+    padding: 70px 0px 0px 0px;
+}
+
+.add-a-new
+{
+    font-size: 26px;
+    font-family: Josefin Sans;
+    line-height: 32px;
+    margin-bottom: 0rem;
+    padding: 150px 0px 15px 0px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.it-is-developed-div
+{
+    border-top: 2px dashed #707070;
+    border-bottom: 2px dashed #707070;
+}
+
+.it-is-developed
+{
+    font-size: 26px;
+    font-family: Josefin Sans;
+    line-height: 32px;
+    margin-bottom: 0rem;
+    padding: 15px 0px 15px 0px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.why-are-you
+{
+    font-size: 26px;
+    font-family: Josefin Sans;
+    line-height: 32px;
+    margin-bottom: 0rem;
+    padding: 25px 0px 35px 0px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+
+.add-a-new-feel
+{
+    font-size: 22px;
+    font-family: Josefin Sans;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+.mockup-ph-img
+{
+   margin-top: -50px;
+}
+
+.android-app
+{
+ cursor: pointer;
+
+}
+
+.i-phone-app-div
+{
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px)
+{
+  .add-a-new
+  {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 70px 0px 15px 0px;
+    text-align: justify;
+  }
+
+  .it-is-developed, .why-are-you
+  {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+  }
+
+  .download-app-ph-div
+  {
+    text-align: center;
+  }
+
+  .i-phone-app-div, .android-app
+  {
+     margin-bottom: 20px;
+  }
+
+  .mockup-ph-img
+  {
+     margin-top: 0px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width:1365px)
+{
+  .add-a-new
+  {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 120px 0px 15px 0px;
+    text-align: justify;
+  }
+
+  .it-is-developed, .why-are-you
+  {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: justify;
+  }
+
+  .mockup-ph-img
+  {
+     margin-top: 0px;
+  }
+}
+
+
+/*-----------------------------Download App End------------------*/
+
+
+
+/*-----------------------------Contact Us Start------------------*/
+
+  .contact-us-title
+{
+    font-size: 32px;
+    margin-bottom: 0rem;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 100px 0px 15px 0px;
+}
+
+.contact-us-underline
+{
+    background: transparent linear-gradient(180deg, #930E7C 0%, #680757 100%) 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    width: 80px;
+    height: 8px;
+}
+
+.contact-us-map
+{
+    padding: 44px 0px 0px 0px;
+}
+
+.address
+{
+    font-size: 24px;
+    font-family: Josefin Sans;
+    font-family: bold;
+    margin-bottom: 0rem;
+    padding: 31px 0px 0px 0px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.address-details
+{
+    font-size: 26px;
+    font-family: Josefin Sans;
+    margin-bottom: 0rem;
+    padding: 0px 0px 8px 0px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+.follow-us-on
+{
+    font-size: 24px;
+    font-family: Josefin Sans;
+    margin-bottom: 0rem;
+    padding: 15px 0px 15px 0px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+.social-media-div
+{
+    border-top: 2px dashed #dbdbdb;
+    border-bottom: 2px dashed #dbdbdb;
+}
+
+.social-media-img-div
+{
+    padding: 20px 0px 20px 20px;
+}
+
+.all-right-reserved
+{
+    font-size: 19px;
+    font-family: Josefin Sans;
+    margin-bottom: 0rem;
+    padding: 20px 0px 15px 0px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+.all-right-reserved a
+{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #333333;
+}
+
+
+
+
+/*-----------------------------Contact Us End------------------*/
+
+
+
+/*-----------------------------Footer Start------------------*/
+
+.footer-section
+{
+   /*background-color: #00214c;*/
+   background-color: #680757;
+}
+
+.footer-logo-wrapper
+{
+
+}
+
+.footer-usefull-link-wrapper, .footer-download-app-wrapper, .footer-newsletter-wrapper
+{
+   padding: 0px 0px 0px 30px;
+}
+
+.footer-title
+{
+  font-size: 24px; 
+  font-family:Josefin Sans; 
+  margin-bottom: 0.1rem;
+  color: #ffffff;
+}
+
+.footer-title-underline
+{
+  background: #ffffff; 
+  border-radius: 25px; 
+  opacity: 1; 
+  width: 80px; 
+  height: 4px;
+}
+
+.it-your-turn
+{
+  font-size: 20px; 
+  font-family:Josefin Sans; 
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.fa
+{
+  color: #dd3ec9;
+}
+
+.footer-fa-text
+{
+  font-size: 18px; 
+  font-family:Josefin Sans;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.footer-usefull-link-wrapper a
+{
+  font-size: 18px; 
+  font-family:Josefin Sans; 
+  line-height: 30px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.all-type-of, .our-latest-news
+{
+  font-size: 18px; 
+  font-family:Josefin Sans; 
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.subscribe-btn
+{
+    text-align: center;
+    font-family:Josefin Sans;
+    display: block;
+    background: transparent linear-gradient(180deg, #FF8A00 0%, #D37008 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+    transition: all ease-in-out 0.1s;
+}
+
+.subscribe-btn:hover
+{
+  color: #fff;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px)
+{
+  .footer-download-app-wrapper
+  {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+/*-----------------------------Footer End------------------*/
+
+
+
+/*-----------------------------Song List Section Start------------------*/
+
+.song-list-title
+{
+    font-size: 32px;
+    margin-bottom: 0rem;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 100px 0px 15px 0px;
+}
+
+.song-list-underline
+{
+    background: transparent linear-gradient(180deg, #930E7C 0%, #680757 100%) 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    width: 80px;
+    height: 8px;
+}
+
+.featured-artists, .top-songs
+{
+    font-size: 20px;
+    margin-bottom: 0rem;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.view-all
+{
+    font-size: 16px;
+    margin-bottom: 0rem;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    margin-bottom: 0rem;
+}
+
+.btn-next, .btn-prevoius
+{
+    font-size: 14px;
+    font-family:Josefin Sans;
+    padding: 05px 10px 05px 10px;
+    text-align: center;
+    display: block;
+    background: transparent linear-gradient(180deg, #FF8A00 0%, #D37008 100%) 0% 0% no-repeat padding-box;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all ease-in-out 0.1s;
+}
+
+.btn-next:hover, .btn-prevoius:hover
+{
+  color: #ffffff;
+}
+
+.artist-card
+{
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.artist-img
+{
+  width: 100px;
+  height: 100px;
+  padding: 5px 0px 5px 5px;
+}
+
+.artist-name
+{
+    font-size: 18px;
+    font-family:Josefin Sans;
+    padding: 18px 0px 0px 10px;
+    margin-bottom: 0rem;
+    color: #00214c;
+}
+
+.artist-song-track
+{
+    font-size: 16px;
+    font-family:Josefin Sans;
+    padding: 10px 0px 0px 10px;
+    margin-bottom: 0rem;
+    color: #930E7C;
+}
+
+.artist-song-view
+{
+    font-size: 16px;
+    font-family:Josefin Sans;
+    padding: 10px 0px 0px 20px;
+    margin-bottom: 0rem;
+    color: #FF8A00;
+}
+
+.song-list-img
+{
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  padding: 5px 0px 5px 5px;
+}
+
+.song-list-song-name
+{
+    font-size: 20px;
+    font-family:Josefin Sans;
+    padding: 8px 0px 0px 15px;
+    margin-bottom: 0rem;
+    color: #333333;
+}
+
+.song-list-song-artist-name
+{
+    font-size: 18px;
+    font-family:Josefin Sans;
+    padding: 0px 0px 0px 15px;
+    margin-bottom: 0rem;
+    color: #00214c;
+}
+
+.song-list-song-view
+{
+    font-size: 16px;
+    font-family:Josefin Sans;
+    padding: 25px 0px 0px 0px;
+    margin-bottom: 0rem;
+    color: #FF8A00;
+}
+
+.song-list-song-duration
+{
+    font-size: 16px;
+    font-family:Josefin Sans;
+    padding: 25px 0px 0px 0px;
+    margin-bottom: 0rem;
+    color: #930E7C;
+}
+
+
+.three-dot-div-wrapper
+{
+    padding: 7px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.three-dot-div-wrapper i
+{
+    font-size: 16px;
+}
+
+.three-dot-dropdown-wrapper
+{
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    position: absolute;
+    min-width: 30%;
+    padding: 5px;
+    right:5%;
+    display: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:Josefin Sans;
+
+}
+
+.three-dot-dropdown-wrapper ul
+{
+    list-style: none;
+    margin-bottom: 0rem;
+    padding-left: 0px;
+}
+
+.three-dot-dropdown-wrapper ul li:hover
+{
+    
+    color: #FF8A00;
+}
+
+.three-dot-div-wrapper:hover .three-dot-dropdown-wrapper {display: block;}
+
+
+.three-dot-song-div-wrapper
+{
+    padding: 7px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.three-dot-song-div-wrapper i
+{
+    font-size: 16px;
+}
+
+.three-dot-song-div-dropdown-wrapper
+{
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    position: absolute;
+    min-width: 15%;
+    padding: 5px;
+    right:3%;
+    display: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:Josefin Sans;
+
+}
+
+.three-dot-song-div-dropdown-wrapper ul
+{
+    list-style: none;
+    margin-bottom: 0rem;
+    padding-left: 0px;
+}
+
+.three-dot-song-div-dropdown-wrapper ul li:hover
+{
+    
+    color: #FF8A00;
+}
+
+.three-dot-song-div-wrapper:hover .three-dot-song-div-dropdown-wrapper {display: block;}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*-----------------------------Song List Section End------------------*/
+
+
+
+
+
+
+
+/*-------------------------------------------Mouse Cursor Start--------------------------*/
+
+html:hover .cursor {
+  opacity: 1;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  pointer-events: none;
+}
+.cursor--hover .cursor-inner {
+  transform: scale(0.5);
+  opacity: 0;
+}
+.cursor--hover .cursor-outer {
+  transform: scale(1.4);
+  border-color: #000;
+  opacity: 1;
+}
+
+.cursor-move-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+.cursor-move-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cursor-inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #862B78;
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cursor-outer {
+  display: block;
+  width: 70%;
+  height: 70%;
+  border: 1px solid #FF8A00;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+canvas
+  {
+    display: none !important;
+  }
+
+
+/*-------------------------------------------Mouse Cursor End--------------------------*/
+
+
+/*-----------------------------Img Up Down Animation Start------------------*/
+img.img-up-down-animation {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.img-up-down-animation {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+/*-----------------------------Img Up Down Animation End------------------*/

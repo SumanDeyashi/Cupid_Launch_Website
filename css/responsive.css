@@ -1,0 +1,303 @@
+
+@media (max-width: 767px) 
+{
+   .mynav .navbar-toggler .navbar-toggler-icon { color:#fff; outline:0px;}
+   
+   .navbg 
+   {
+       background:none;
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(128,128,128,1);
+      -moz-box-shadow: 0px 0px 0px 0px rgba(128,128,128,1);
+      box-shadow: 0px 0px 0px 0px rgba(128,128,128,1);
+   }
+   
+
+   .navbar
+    {
+        padding:5px;
+    }
+   
+    .navbar-collapse
+    {
+        border-radius:5px;
+        background-color:rgba(0,0,0,0.8);
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+         box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    }
+    
+    .navbar-nav .nav-item
+    {
+        padding:0px 10px;
+        border-bottom:1px solid #565963;
+    }
+    
+    .navbar-nav .nav-item:last-child
+    {
+        border:none;
+    }
+    
+    .top_nav
+    {
+        text-align:center;
+    }
+    
+    .donate
+    {
+        display:none;
+    }
+    
+    .mybt
+    {
+      padding: 0px;
+      margin-left: 0px;
+      text-align:center;
+      display:block;
+      line-height:40px;
+      background:#f2a500;
+      color:#fff;
+      transition:all ease-in-out 0.1s;
+   }
+
+  .mybt a
+  {
+      color:#fff;
+      transition:all ease-in-out 0.1s;
+  }
+
+  .mybt:hover, .mybt a:hover
+  {
+      /*background:#f6413e; 
+      color:#fff;*/
+      text-decoration:none;
+  }
+
+  .navbar-nav .nav-item a, .navbar-nav .nav-item .mybt
+  {
+    font-size:12px;
+  }
+
+  .carousel-content {
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-content-2nd
+  {
+    top: 45%;
+    right:7%;
+    transform: translateY(-45%);
+  }
+
+  .home-slider-header-text
+  {
+      font-size: 0.8rem;
+      margin-bottom: 0.2rem;
+  }
+
+  .home-slider-sub-header-text
+  {
+      font-size: 0.8rem;
+      line-height: 18px;
+      margin-bottom: 0.2rem;
+  }
+
+  .home-slider-title-text
+  {
+      font-size: 0.6rem;
+      margin-bottom: 0.2rem;
+  }
+
+
+
+
+  /*-------------------------------------------About Us Start--------------------------*/
+
+   .about-us-title
+  {
+      font-size: 30px;
+      padding: 60px 0px 15px 0px;
+  }
+
+  .we-a-technological
+  {
+      font-size: 26px;
+      line-height: 35px;
+  }
+
+  .we-help-make
+  {
+      font-size: 19px;
+      text-align: justify;
+  }
+
+
+  .about-us-circle-img
+  {
+      margin-top: 0px;
+  }
+
+  .about-us-circle-img-div
+  {
+     text-align: center;
+  }
+
+  /*-------------------------------------------About Us End--------------------------*/
+
+
+  /*-------------------------------------------Key Features Start--------------------------*/
+
+  .features-section
+  {
+    margin:30px 0px 0px 0px;
+  }
+
+
+   .features-title
+  {
+      font-size: 30px;
+      padding: 60px 0px 15px 0px;
+  }
+
+  .features-header
+  {
+
+      font-size: 26px;
+  }
+
+  .features-sub-header
+  {
+      font-size: 15px;
+      margin: -10px 0rem 0rem 0rem;
+  }
+
+  .key-features-col-border
+  {
+      border-right:none; 
+  }
+
+  .original-india-short
+  {
+      padding: 0px 0px 0px 15px;
+      font-size: 16px;
+  }
+
+  /*-------------------------------------------Key Features End--------------------------*/
+
+
+
+  /*-------------------------------------------Advanced Features End--------------------------*/
+  .advanced-features-title
+  {
+      font-size: 30px;
+      padding: 60px 0px 15px 0px;
+  }
+  .be-discover-or
+  {
+      font-size: 20px;
+      text-align: justify;
+  }
+
+  .be-discover-or-div
+  {
+    margin-bottom: 20px;
+  }
+  /*-------------------------------------------Advanced Features End--------------------------*/
+
+
+
+  /*-------------------------------------------Download App Start--------------------------*/
+  .download-app-title
+  {
+      font-size: 30px;
+      padding: 60px 0px 15px 0px;
+  }
+
+  .add-a-new
+  {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 70px 0px 15px 0px;
+    text-align: justify;
+  }
+
+  .it-is-developed, .why-are-you
+  {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+  }
+
+  .download-app-ph-div
+  {
+    text-align: center;
+  }
+
+  .i-phone-app-div, .android-app
+  {
+     margin-bottom: 20px;
+  }
+
+  .add-a-new-feel 
+  {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /*-------------------------------------------Download App End--------------------------*/
+
+
+  /*-------------------------------------------Contact Us Start--------------------------*/
+
+  .contact-us-title 
+  {
+      font-size: 30px;
+      padding: 60px 0px 15px 0px;
+  }
+  .address-details 
+  {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  /*-------------------------------------------Contact Us End--------------------------*/
+
+
+  /*-------------------------------------------Footer Start--------------------------*/
+  .footer-usefull-link-wrapper
+  {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .footer-download-app-wrapper
+  {
+    padding: 0px 0px 10px 0px;
+  } 
+
+  .footer-newsletter-wrapper
+  {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .footer-logo-wrapper
+  {
+    padding: 0px 0px 10px 0px;
+  }
+
+  /*-------------------------------------------Footer End--------------------------*/
+
+
+  /*-----------------------------Song List Section Start------------------*/
+
+
+
+
+  /*-----------------------------Song List Section End------------------*/
+
+ 
+}
+
+
+
+
